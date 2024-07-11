@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Residence Management System</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">University Residence Management System</h1>
+
+        <div class="form-section mb-4">
+            <h2>Search and Filter</h2>
+            <div class="form-group">
+                <input type="text" id="searchBar" class="form-control" placeholder="Search...">
+            </div>
+            <button onclick="search()" class="btn btn-primary btn-block">Search</button>
+            <p id="searchOutput" class="mt-3"></p>
+        </div>
+        
+        <div class="form-section mb-4">
+            <h2>Create Dorm Room</h2>
+            <div class="form-group">
+                <input type="text" id="dormName" class="form-control" placeholder="Dorm Name">
+            </div>
+            <div class="form-group">
+                <input type="text" id="dormAddress" class="form-control" placeholder="Dorm Address">
+            </div>
+            <div class="form-group">
+                <input type="number" id="dormSize" class="form-control" placeholder="Dorm Size (sq ft)">
+            </div>
+            <button onclick="createDormRoom()" class="btn btn-primary btn-block">Create Dorm Room</button>
+            <p id="dormRoomOutput" class="mt-3"></p>
+        </div>
+
+        <div class="form-section mb-4">
+            <h2>Create Apartment</h2>
+            <div class="form-group">
+                <input type="text" id="apartmentName" class="form-control" placeholder="Apartment Name">
+            </div>
+            <div class="form-group">
+                <input type="text" id="apartmentAddress" class="form-control" placeholder="Apartment Address">
+            </div>
+            <div class="form-group">
+                <input type="number" id="apartmentBedrooms" class="form-control" placeholder="Number of Bedrooms">
+            </div>
+            <button onclick="createApartment()" class="btn btn-primary btn-block">Create Apartment</button>
+            <p id="apartmentOutput" class="mt-3"></p>
+        </div>
+
+        <div class="form-section mb-4">
+            <h2>Create Student</h2>
+            <div class="form-group">
+                <input type="text" id="studentName" class="form-control" placeholder="Student Name">
+            </div>
+            <div class="form-group">
+                <input type="text" id="studentID" class="form-control" placeholder="Student ID">
+            </div>
+            <div class="form-group">
+                <input type="text" id="studentGender" class="form-control" placeholder="Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" id="studentResidence" class="form-control" placeholder="Residence Name">
+            </div>
+            <button onclick="createStudent()" class="btn btn-primary btn-block">Create Student</button>
+            <p id="studentOutput" class="mt-3"></p>
+        </div>
+
+        <div class="form-section mb-4">
+            <h2>Submit Maintenance Request</h2>
+            <div class="form-group">
+                <input type="text" id="requestDescription" class="form-control" placeholder="Request Description">
+            </div>
+            <div class="form-group">
+                <input type="text" id="requestStudentName" class="form-control" placeholder="Student Name">
+            </div>
+            <button onclick="submitMaintenanceRequest()" class="btn btn-primary btn-block">Submit Request</button>
+            <p id="requestOutput" class="mt-3"></p>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
